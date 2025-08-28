@@ -2,7 +2,7 @@
 {
     internal class NodeManager
     {
-        private static readonly int _randomTimeVariation;
+        private static readonly int _randomTimeVariationMs = 5000; // +-2500 ms
 
         private static List<Node>? _nodes;
 
@@ -13,8 +13,13 @@
 
             for (int i = 1; i <= numNodes; i++)
             {
-                _nodes.Add(new Node(i, i + initialPort, i == 1, DateTime.Now));
-                Thread.Sleep(random.Next() * 50);
+                DateTime time = DateTime.Now;
+                if (i != 1)
+                {
+                    time = time.AddMilliseconds((random.NextDouble() * _randomTimeVariationMs) - (_randomTimeVariationMs / 2f));
+                }
+
+                _nodes.Add(new Node(i, i + initialPort, i == 1, time));
             }
         }
     }

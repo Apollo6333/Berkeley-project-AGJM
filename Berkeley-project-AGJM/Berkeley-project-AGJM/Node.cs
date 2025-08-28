@@ -2,9 +2,9 @@
 {
     internal class Node
     {
-        private int _id;
-        private int _port;
-        private bool _isCoordinator;
+        private readonly int _id;
+        private readonly int _port;
+        private readonly bool _isCoordinator;
         private DateTime _time;
 
         public Node(int id, int port, bool isCoordinator, DateTime time)
@@ -13,6 +13,13 @@
             _port = port;
             _isCoordinator = isCoordinator;
             _time = time;
+            
+            AnnounceStart();
+        }
+
+        private void AnnounceStart()
+        {
+            Helpers.Log(_id, _time, $"Iniciando em <{_port}>" + (_isCoordinator ? ", eu sou o coordenador" : ""), _isCoordinator);
         }
     }
 }

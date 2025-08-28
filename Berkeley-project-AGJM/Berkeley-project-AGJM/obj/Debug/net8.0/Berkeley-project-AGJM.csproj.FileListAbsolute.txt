@@ -1,0 +1,15 @@
+C:\Users\grego\OneDrive\Área de Trabalho\Furb\Sistemas Distribuidos\Trabalhos\Trabalho 2\Berkeley-project-AGJM\Berkeley-project-AGJM\Berkeley-project-AGJM\bin\Debug\net8.0\Berkeley-project-AGJM.exe
+C:\Users\grego\OneDrive\Área de Trabalho\Furb\Sistemas Distribuidos\Trabalhos\Trabalho 2\Berkeley-project-AGJM\Berkeley-project-AGJM\Berkeley-project-AGJM\bin\Debug\net8.0\Berkeley-project-AGJM.deps.json
+C:\Users\grego\OneDrive\Área de Trabalho\Furb\Sistemas Distribuidos\Trabalhos\Trabalho 2\Berkeley-project-AGJM\Berkeley-project-AGJM\Berkeley-project-AGJM\bin\Debug\net8.0\Berkeley-project-AGJM.runtimeconfig.json
+C:\Users\grego\OneDrive\Área de Trabalho\Furb\Sistemas Distribuidos\Trabalhos\Trabalho 2\Berkeley-project-AGJM\Berkeley-project-AGJM\Berkeley-project-AGJM\bin\Debug\net8.0\Berkeley-project-AGJM.dll
+C:\Users\grego\OneDrive\Área de Trabalho\Furb\Sistemas Distribuidos\Trabalhos\Trabalho 2\Berkeley-project-AGJM\Berkeley-project-AGJM\Berkeley-project-AGJM\bin\Debug\net8.0\Berkeley-project-AGJM.pdb
+C:\Users\grego\OneDrive\Área de Trabalho\Furb\Sistemas Distribuidos\Trabalhos\Trabalho 2\Berkeley-project-AGJM\Berkeley-project-AGJM\Berkeley-project-AGJM\obj\Debug\net8.0\Berkeley-project-AGJM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\grego\OneDrive\Área de Trabalho\Furb\Sistemas Distribuidos\Trabalhos\Trabalho 2\Berkeley-project-AGJM\Berkeley-project-AGJM\Berkeley-project-AGJM\obj\Debug\net8.0\Berkeley-project-AGJM.AssemblyInfoInputs.cache
+C:\Users\grego\OneDrive\Área de Trabalho\Furb\Sistemas Distribuidos\Trabalhos\Trabalho 2\Berkeley-project-AGJM\Berkeley-project-AGJM\Berkeley-project-AGJM\obj\Debug\net8.0\Berkeley-project-AGJM.AssemblyInfo.cs
+C:\Users\grego\OneDrive\Área de Trabalho\Furb\Sistemas Distribuidos\Trabalhos\Trabalho 2\Berkeley-project-AGJM\Berkeley-project-AGJM\Berkeley-project-AGJM\obj\Debug\net8.0\Berkeley-project-AGJM.csproj.CoreCompileInputs.cache
+C:\Users\grego\OneDrive\Área de Trabalho\Furb\Sistemas Distribuidos\Trabalhos\Trabalho 2\Berkeley-project-AGJM\Berkeley-project-AGJM\Berkeley-project-AGJM\obj\Debug\net8.0\Berkeley-project-AGJM.sourcelink.json
+C:\Users\grego\OneDrive\Área de Trabalho\Furb\Sistemas Distribuidos\Trabalhos\Trabalho 2\Berkeley-project-AGJM\Berkeley-project-AGJM\Berkeley-project-AGJM\obj\Debug\net8.0\Berkeley-project-AGJM.dll
+C:\Users\grego\OneDrive\Área de Trabalho\Furb\Sistemas Distribuidos\Trabalhos\Trabalho 2\Berkeley-project-AGJM\Berkeley-project-AGJM\Berkeley-project-AGJM\obj\Debug\net8.0\refint\Berkeley-project-AGJM.dll
+C:\Users\grego\OneDrive\Área de Trabalho\Furb\Sistemas Distribuidos\Trabalhos\Trabalho 2\Berkeley-project-AGJM\Berkeley-project-AGJM\Berkeley-project-AGJM\obj\Debug\net8.0\Berkeley-project-AGJM.pdb
+C:\Users\grego\OneDrive\Área de Trabalho\Furb\Sistemas Distribuidos\Trabalhos\Trabalho 2\Berkeley-project-AGJM\Berkeley-project-AGJM\Berkeley-project-AGJM\obj\Debug\net8.0\Berkeley-project-AGJM.genruntimeconfig.cache
+C:\Users\grego\OneDrive\Área de Trabalho\Furb\Sistemas Distribuidos\Trabalhos\Trabalho 2\Berkeley-project-AGJM\Berkeley-project-AGJM\Berkeley-project-AGJM\obj\Debug\net8.0\ref\Berkeley-project-AGJM.dll

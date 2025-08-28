@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Berkeley-project-AGJM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3da52d2b8bb6866de7f12392a70ad24838102fe3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5df4e8bb98b264f63ddc454ba69332a39b87a65e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Berkeley-project-AGJM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Berkeley-project-AGJM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
