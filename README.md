@@ -1,5 +1,11 @@
 # Berkeley-project-AGJM
 
+Equipe:
+André Luiz de Souza Nunes
+Grégori Pintarelli
+Jaqueline Klegin
+Matheus Eduardo dos Santos
+
 TRABALHO PRÁTICO 02 – SINCRONIZAÇÃO DE RELÓGIOS / COMUNICAÇÃO           
 
 O algoritmo de Berkeley é o método que faz o relógio distribuir e sincronizar computadores. Ele faz uma consulta em cada computador e verifica os valores dos relógios. Efetua uma média dos dados coletados e informa a cada máquina para que se ajuste. Atrasando ou adiantando. 
