@@ -1,10 +1,10 @@
 # Berkeley-project-AGJM
 
-Equipe:
-André Luiz de Souza Nunes  
-Grégori Pintarelli  
-Jaqueline Klegin  
-Matheus Eduardo dos Santos  
+Equipe:  
+- André Luiz de Souza Nunes  
+- Grégori Pintarelli  
+- Jaqueline Klegin  
+- Matheus Eduardo dos Santos  
 
 TRABALHO PRÁTICO 02 – SINCRONIZAÇÃO DE RELÓGIOS / COMUNICAÇÃO           
 
