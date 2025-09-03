@@ -1,4 +1,7 @@
-﻿namespace Berkeley_project_AGJM
+﻿using System.Net.Sockets;
+using System.Text;
+
+namespace Berkeley_project_AGJM
 {
     internal class Helpers
     {
@@ -6,7 +9,32 @@
 
         public static bool IsPortAlreadyInUse(int port)
         {
-            return false; // TO-DO
+            try
+            {
+                using UdpClient udpClient = new(port);
+                return false;
+            }
+            catch (SocketException)
+            {
+                return true;
+            }
+        }
+
+        public static void SendMessage(Dictionary<int, int> nodes, object threadLock, int senderId, int targetId, DateTime time, Node.MessageType type, string message = "")
+        {
+            lock (threadLock)
+            {
+                if (!nodes.TryGetValue(targetId, out int targetPort))
+                {
+                    Log(time, $"Tentando mandar mensagem para [{targetId}], um ID não existente", true);
+                    return;
+                }
+
+                using UdpClient client = new();
+                string messageToSend = senderId + "|" + type.ToString() + "|" + message;
+                byte[] data = Encoding.UTF8.GetBytes(messageToSend);
+                client.Send(data, data.Length, "127.0.0.1", targetPort);
+            }
         }
 
         public static void Log(DateTime time, string log, bool coordinator = false, bool error = false)
@@ -24,6 +52,7 @@
             lock (threadLock)
             {
                 string timeFormated = time.ToString("HH:mm:ss:fff");
+
                 string logToSend = (error ? "ERROR: " : "") + log;
                 string fullLog = (id != -1 ? $"[{id}] @ " : "") + $"{timeFormated} | {logToSend}";
 
