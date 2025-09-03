@@ -24,6 +24,11 @@ namespace Berkeley_project_AGJM
         private UdpClient _udpClient;
         private Thread _listenThread;
 
+        private Timer? _berkeleyStartTimer;
+        private readonly int _berkeleyStartDelayMs = 5000; // 5 seg
+
+        private static readonly object _nodeLock = new();
+
         public Node(int id, int port, bool isCoordinator, Dictionary<int, int> nodes, DateTime time)
         {
             _id = id;
@@ -34,11 +39,17 @@ namespace Berkeley_project_AGJM
             _currentTime = time;
             _timer = new(TickTimer, null, 1, 1);
 
-            _udpClient = new UdpClient(port);
+            _udpClient = new(port);
             _udpClient.Client.ReceiveTimeout = 100;
-            _listenThread = new Thread(ListenThread);
+            _listenThread = new(ListenThread);
+            _listenThread.Start();
 
             AnnounceStart();
+
+            if (isCoordinator) // Se é o coordenador, chamar o algoritmo de Berkeley depois de 5 segundos
+            {
+                _berkeleyStartTimer = new(BerkeleyStart, null, _berkeleyStartDelayMs, Timeout.Infinite);
+            }
         }
 
         // Thread que escuta e processa mensagens
@@ -59,14 +70,14 @@ namespace Berkeley_project_AGJM
 
         private void ListenAndProcessMessages()
         {
-            string message = "";
+            string message;
             try
             {
                 IPEndPoint? remote = null;
                 byte[] rawData = _udpClient.Receive(ref remote);
                 message = Encoding.UTF8.GetString(rawData);
             }
-            catch (SocketException) { }
+            catch (SocketException) { return; }
 
             string[] parts = message.Split('|');
 
@@ -111,6 +122,17 @@ namespace Berkeley_project_AGJM
         private void OffsetTime()
         {
             // TO-DO
+        }
+
+        private void BerkeleyStart(object? state) // Inicia a algoritmo de Berkeley
+        {
+            foreach (int id in _nodePorts.Keys)
+            {
+                if (id == _id) continue;
+
+                // Coordenador pede tempo a todos outros nós
+                Helpers.SendMessage(_nodePorts, _nodeLock, _id, id, _currentTime, MessageType.GIVE_TIME);
+            }
         }
     }
 }

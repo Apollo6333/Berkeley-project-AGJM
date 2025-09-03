@@ -2,7 +2,7 @@
 {
     internal class NodeManager
     {
-        private static readonly int _randomTimeVariationMs = 10000; // +-5000 ms
+        private static readonly int _randomTimeVariationMs = 10000; // +-5 seg
 
         private static List<Node> _nodes = [];
         private static Dictionary<int, int> _nodePorts = [];
@@ -25,7 +25,7 @@
                 }
 
                 nodesToAdd.Add(i);
-                _nodePorts.Add(i, i + initialPort); // Gera _nodePorts
+                _nodePorts.Add(i, i + initialPort); // Gera _nodePorts, que é usado para mensagens entre os nós
             }
 
             for (int i = 1; i <= numNodes; i++)
@@ -37,7 +37,7 @@
                     time = time.AddMilliseconds((random.NextDouble() * _randomTimeVariationMs) - (_randomTimeVariationMs / 2f));
                 }
 
-                _nodes.Add(new(i, i + initialPort, i == 1, _nodePorts, time));
+                _nodes.Add(new(i, i + initialPort, i == 1, _nodePorts, time)); // Cria cada nó
             }
         }
     }

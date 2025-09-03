@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Berkeley-project-AGJM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79bcc334fb7d175997f16741e2000b462fe01d23")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f080a9fd8820b264b68d94342bfe10a4d35287a8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Berkeley-project-AGJM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Berkeley-project-AGJM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
