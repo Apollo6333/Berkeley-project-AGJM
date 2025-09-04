@@ -44,7 +44,6 @@ namespace Berkeley_project_AGJM
             _timer = new(TickTimer, null, _timerUpdatePeriod, _timerUpdatePeriod);
 
             _udpClient = new(port);
-            _udpClient.Client.ReceiveTimeout = 100;
             _listenThread = new(ListenThread);
             _listenThread.Start();
 
@@ -120,9 +119,9 @@ namespace Berkeley_project_AGJM
 
         private void SendTimeOffsetReceived(int senderId, double offset)
         {
-            Helpers.Log(_id, _currentTime, $"Offset de tempo recebido de [{senderId}]: {offset}ms", _coordinatorId == _id);
-
             _receivedTimeOffsets.Add(senderId, offset);
+
+            Helpers.Log(_id, _currentTime, $"Offset de tempo recebido de [{senderId}]: {offset}ms, faltam {_nodePorts.Count - _receivedTimeOffsets.Count} enviar", _coordinatorId == _id);
 
             if (_receivedTimeOffsets.Count >= _nodePorts.Count) // Todos tempos recebidos, calcular média
             {
@@ -133,6 +132,7 @@ namespace Berkeley_project_AGJM
         private void FinalOffsetTimeReceived(double ms)
         {
             _currentTime = _currentTime.AddMilliseconds(-ms);
+            _timer.Change(_timerUpdatePeriod, _timerUpdatePeriod);
 
             Helpers.Log(_id, _currentTime, $"Offset de tempo recebido e aplicado: {ms}ms", _coordinatorId == _id);
         }
