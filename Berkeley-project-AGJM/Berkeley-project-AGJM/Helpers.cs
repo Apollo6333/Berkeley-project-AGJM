@@ -5,6 +5,7 @@ namespace Berkeley_project_AGJM
 {
     internal class Helpers
     {
+        public static readonly string timePattern = "yyyy-MM-dd HH:mm:ss:fff";
         private static readonly object _defaultLogLock = new();
 
         public static bool IsPortAlreadyInUse(int port)
@@ -51,7 +52,7 @@ namespace Berkeley_project_AGJM
         {
             lock (threadLock)
             {
-                string timeFormated = time.ToString("HH:mm:ss:fff");
+                string timeFormated = time.ToString(timePattern);
 
                 string logToSend = (error ? "ERROR: " : "") + log;
                 string fullLog = (id != -1 ? $"[{id}] @ " : "") + $"{timeFormated} | {logToSend}";
