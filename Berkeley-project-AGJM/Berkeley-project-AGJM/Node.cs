@@ -17,19 +17,19 @@ namespace Berkeley_project_AGJM
         private readonly int _id;
         private readonly int _port;
         private readonly int _coordinatorId;
-        private Dictionary<int, int> _nodePorts = []; // Guarda <id, porta>, usado para mandar mensagens
+        private readonly Dictionary<int, int> _nodePorts = []; // Guarda <id, porta>, usado para mandar mensagens
 
         private DateTime _currentTime;
         private readonly Timer _timer;
         private static readonly int _timerUpdatePeriod = 20; // 50hz
 
-        private UdpClient _udpClient;
-        private Thread _listenThread;
+        private readonly UdpClient _udpClient;
+        private readonly Thread _listenThread;
 
-        private Timer? _berkeleyStartTimer;
+        private readonly Timer? _berkeleyStartTimer;
         private static readonly int _berkeleyStartDelayMs = 5000; // 5 seg
 
-        private Dictionary<int, double> _receivedTimeOffsets = []; // Guarda <id, offset de tempo>
+        private readonly Dictionary<int, double> _receivedTimeOffsets = []; // Guarda <id, offset de tempo>
 
         private static readonly object _nodeLock = new();
 
@@ -131,7 +131,7 @@ namespace Berkeley_project_AGJM
 
         private void FinalOffsetTimeReceived(double ms)
         {
-            _currentTime = _currentTime.AddMilliseconds(-ms);
+            _currentTime = _currentTime.AddMilliseconds(ms);
             _timer.Change(_timerUpdatePeriod, _timerUpdatePeriod);
 
             Helpers.Log(_id, _currentTime, $"Offset de tempo recebido e aplicado: {ms}ms", _coordinatorId == _id);
@@ -158,7 +158,7 @@ namespace Berkeley_project_AGJM
             foreach (KeyValuePair<int, double> kvp in _receivedTimeOffsets)
             {
                 // Enviar de volta diferença de tempo da média para todos nós, incluindo a si mesmo
-                Helpers.SendMessage(_nodePorts, _nodeLock, _id, kvp.Key, _currentTime, MessageType.FINAL_OFFSET_TIME, (averageTimeOffset - kvp.Value).ToString());
+                Helpers.SendMessage(_nodePorts, _nodeLock, _id, kvp.Key, _currentTime, MessageType.FINAL_OFFSET_TIME, (kvp.Value - averageTimeOffset).ToString());
             }
         }
 

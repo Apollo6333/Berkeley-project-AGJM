@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{6A204F9F-C492-4213-9A1F-5F21FA7072B2}|Berkeley-project-AGJM\\Berkeley-project-AGJM.csproj|solutionrelative:berkeley-project-agjm\\node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A204F9F-C492-4213-9A1F-5F21FA7072B2}|Berkeley-project-AGJM\\Berkeley-project-AGJM.csproj|c:\\users\\grego\\onedrive\\\u00E1rea de trabalho\\furb\\sistemas distribuidos\\trabalhos\\trabalho 2\\berkeley-project-agjm\\berkeley-project-agjm\\berkeley-project-agjm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A204F9F-C492-4213-9A1F-5F21FA7072B2}|Berkeley-project-AGJM\\Berkeley-project-AGJM.csproj|solutionrelative:berkeley-project-agjm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6A204F9F-C492-4213-9A1F-5F21FA7072B2}|Berkeley-project-AGJM\\Berkeley-project-AGJM.csproj|c:\\users\\grego\\onedrive\\\u00E1rea de trabalho\\furb\\sistemas distribuidos\\trabalhos\\trabalho 2\\berkeley-project-agjm\\berkeley-project-agjm\\berkeley-project-agjm\\nodemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A204F9F-C492-4213-9A1F-5F21FA7072B2}|Berkeley-project-AGJM\\Berkeley-project-AGJM.csproj|solutionrelative:berkeley-project-agjm\\nodemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A204F9F-C492-4213-9A1F-5F21FA7072B2}|Berkeley-project-AGJM\\Berkeley-project-AGJM.csproj|c:\\users\\grego\\onedrive\\\u00E1rea de trabalho\\furb\\sistemas distribuidos\\trabalhos\\trabalho 2\\berkeley-project-agjm\\berkeley-project-agjm\\berkeley-project-agjm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A204F9F-C492-4213-9A1F-5F21FA7072B2}|Berkeley-project-AGJM\\Berkeley-project-AGJM.csproj|solutionrelative:berkeley-project-agjm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6A204F9F-C492-4213-9A1F-5F21FA7072B2}|Berkeley-project-AGJM\\Berkeley-project-AGJM.csproj|c:\\users\\grego\\onedrive\\\u00E1rea de trabalho\\furb\\sistemas distribuidos\\trabalhos\\trabalho 2\\berkeley-project-agjm\\berkeley-project-agjm\\berkeley-project-agjm\\helpers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,18 +38,17 @@
               "RelativeToolTip": "Berkeley-project-AGJM\\Helpers.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-28T13:51:47.306Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-28T13:51:47.306Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "NodeManager.cs",
               "DocumentMoniker": "C:\\Users\\grego\\OneDrive\\\u00C1rea de Trabalho\\Furb\\Sistemas Distribuidos\\Trabalhos\\Trabalho 2\\Berkeley-project-AGJM\\Berkeley-project-AGJM\\Berkeley-project-AGJM\\NodeManager.cs",
               "RelativeDocumentMoniker": "Berkeley-project-AGJM\\NodeManager.cs",
               "ToolTip": "C:\\Users\\grego\\OneDrive\\\u00C1rea de Trabalho\\Furb\\Sistemas Distribuidos\\Trabalhos\\Trabalho 2\\Berkeley-project-AGJM\\Berkeley-project-AGJM\\Berkeley-project-AGJM\\NodeManager.cs",
               "RelativeToolTip": "Berkeley-project-AGJM\\NodeManager.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBwAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAYAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-28T13:20:32.293Z",
               "EditorCaption": ""
@@ -62,14 +61,14 @@
               "RelativeDocumentMoniker": "Berkeley-project-AGJM\\Node.cs",
               "ToolTip": "C:\\Users\\grego\\OneDrive\\\u00C1rea de Trabalho\\Furb\\Sistemas Distribuidos\\Trabalhos\\Trabalho 2\\Berkeley-project-AGJM\\Berkeley-project-AGJM\\Berkeley-project-AGJM\\Node.cs",
               "RelativeToolTip": "Berkeley-project-AGJM\\Node.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAwwIYAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAwwIUAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-28T13:15:27.85Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\grego\\OneDrive\\\u00C1rea de Trabalho\\Furb\\Sistemas Distribuidos\\Trabalhos\\Trabalho 2\\Berkeley-project-AGJM\\Berkeley-project-AGJM\\Berkeley-project-AGJM\\Program.cs",
               "RelativeDocumentMoniker": "Berkeley-project-AGJM\\Program.cs",
@@ -77,8 +76,7 @@
               "RelativeToolTip": "Berkeley-project-AGJM\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-28T12:47:37.523Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-28T12:47:37.523Z"
             }
           ]
         }

@@ -4,8 +4,8 @@
     {
         private static readonly int _randomTimeVariationMs = 10000; // +-5 seg
 
-        private static List<Node> _nodes = [];
-        private static Dictionary<int, int> _nodePorts = [];
+        private readonly static List<Node> _nodes = [];
+        private readonly static Dictionary<int, int> _nodePorts = [];
 
         public static void StartNodes(int numNodes, int initialPort)
         {
